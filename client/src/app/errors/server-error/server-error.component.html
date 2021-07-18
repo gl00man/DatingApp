@@ -1,0 +1,14 @@
+<h4>Internal server error! - Try to refresh the page.</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">If you see this then Angular is probably working correctly.</h5>
+    <p class="font-weight-bold">What to do next?</p>
+    <ol>
+        <li>Open dev tools</li>
+        <li>Inspect the network tab</li>
+        <li>Check the failing request</li>
+        <li>Examine the request URL - make sure it is correct</li>
+        <li>Reproduce the error in Postman - if we see the same response, then issiu is not with Angular</li>
+    </ol>
+    <p>Following is the stack trace - this is were your investigation should start.</p>
+    <code class="m-5" style="background-color: whitesmoke;">{{error.details}}</code>
+</ng-container>
