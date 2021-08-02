@@ -21,10 +21,5 @@ namespace API.Entities
         public DateTime DateOfBirth { get; set; }
         public DateTime Created { get; set; } = DateTime.Now;
         public DateTime LastActive { get; set; } = DateTime.Now;
-
-        // public int GetAge()
-        // {
-        //     return DateOfBirth.CalculateAge();
-        // }
     }
 }
