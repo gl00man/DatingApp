@@ -35,6 +35,7 @@ export class MemberEditComponent implements OnInit {
   updateMember() {
     console.log(this.member);
     this.toastr.success("Changes succesfully saved!");
+    this.editForm.reset(this.member);
   }
 
 }
